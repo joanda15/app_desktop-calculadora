@@ -1,0 +1,135 @@
+*,
+*::after
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.superior {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: #4b6cb7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    user-select: none;
+    -webkit-app-region: drag;
+}
+
+.titulo {
+    margin: 0 auto;
+    font-size: 0.8rem;
+    color: white;
+    cursor: move;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.punto {
+    cursor: pointer;
+    border-radius: 45%;
+    margin: 12px;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: rgb(0, 0, 0);
+    -webkit-app-region: no-drag;
+}
+
+html {
+    font-size: 150%;
+}
+
+body {
+    font: 1.5rem 'roboto_font', sans-serif;
+    font-weight: 300;
+}
+
+.tecla {
+    background-color: rgb(126, 121, 183);
+    border-radius: 50%;
+    border: 1px solid rgb(126, 121, 183);
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    user-select: none;
+    box-shadow: inset 2px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.30s;
+    -webkit-tap-hightlight-color: rgba(0, 0, 0, 0);
+}
+
+.tecla:hover {
+    background-color: rgb(100, 170, 255);
+    border: 1px solid rgb(100, 170, 255);
+}
+
+.tecla:active {
+    background-color: rgb(100, 170, 255);
+    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgb(100, 170, 255);
+}
+
+.pantalla {
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    min-height: 5.5rem;
+}
+
+.pantalla p {
+    margin: 0px;
+    margin-right: 1rem;
+    padding: 0px;
+}
+
+#calculadora {
+    background: #4b6cb7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.teclas {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    flex: 1;
+    padding: 15px;
+}
+
+.igual, .suma {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.igual {
+    background-color: #FF5722;
+    color: white;
+    border: 1px solid #FF5722;
+    transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+.igual:hover,
+.igual:active
+.igual.active {
+    background-color: #ff9b93;
+    border: 1px solid #ff9b93;
+}
