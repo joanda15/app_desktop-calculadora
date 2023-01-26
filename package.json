@@ -1,0 +1,19 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Calculadora realizada con alectron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Joan Gomezjurado",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.1.0",
+    "electron-compilers": "^5.9.0",
+    "electron-prebuilt-compile": "^8.2.0"
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.4"
+  }
+}
